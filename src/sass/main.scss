@@ -1,0 +1,20 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/addNewCourseBtn';
+@import 'components/baseBtn';
+@import 'components/deleteBtn';
+@import 'components/hero';
+@import 'components/moreBtn';
+@import 'components/myCourses';
+@import 'components/myTournaments';
+
+@import 'layout/flex';
+
+@import 'pages/home';

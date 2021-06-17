@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+}
+
+.row {
+    max-width: $row-width;
+    margin: 0 auto;
+    padding: 2.5rem;
+}

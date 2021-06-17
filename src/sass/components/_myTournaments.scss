@@ -1,0 +1,62 @@
+.tournamentBox {
+
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+    &__activeBox {
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__tournament {
+            width: $card-width;
+            border: 2px solid $color-secondary;
+            border-radius: 3px;
+            box-shadow: 0 .5rem 1rem rgba($color-primary, .5);
+            margin: 2.5rem;
+
+            &Tag {
+                width: 100%;
+                color: $color-white;
+                background-color: $color-secondary;
+                text-align: center;
+                padding: .5rem;
+            }
+
+            &Detail {
+                padding: 1rem;
+            }
+        }
+
+    }
+
+    &__pastBox {
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__tournament {
+            width: $card-width;
+            border: 2px solid $color-primary;
+            border-radius: 3px;
+            box-shadow: 0 .5rem 1rem rgba($color-tertiary, .5);
+            margin: 2.5rem;
+
+            &Tag {
+                width: 100%;
+                color: $color-white;
+                background-color: $color-primary;
+                text-align: center;
+                padding: .5rem;
+            }
+
+            &Detail {
+                padding: 1rem;
+            }
+        }
+
+    }
+}

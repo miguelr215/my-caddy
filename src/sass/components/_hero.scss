@@ -1,0 +1,108 @@
+.heroRow {
+    max-width: $row-width;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-hero {
+
+    // MAIN HERO
+    &--main {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        background-image: url(./images/golf-course2.png);
+        background-size: cover;
+        background-position: top;
+
+        &__greetingBox {
+            width: 35%;
+            background-color: rgba($color-grey-dark, .85);
+            border-radius: 3px;
+            padding: 3rem;
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            & h2 {
+                font-size: $page-header-font-size;
+                margin-bottom: $gutter-vertical;
+            }
+
+            &__navBox {
+                font-size: $default-font-size;
+
+                & ul {
+                    list-style: none;
+                    justify-content: space-between;
+
+                    & li a {
+                        text-decoration: none;
+                        color: $color-white;
+                        padding-bottom: .5rem;
+
+                        &:hover,
+                        &:active {
+                            color: $color-tertiary-light;
+                            border-bottom: 2px solid $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // COURSES HERO
+    &--courses {
+        height: 40vh;
+        width: 100%;
+        background-image: url(./images/golf-course1a.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+
+        & h2 {
+            text-transform: uppercase;
+            text-align: center;
+            color: $color-white;
+            font-size: $page-header-font-size;
+            letter-spacing: 3px;
+            width: 35%;
+            background-color: rgba($color-grey-dark, .85);
+            border-radius: 3px;
+            padding: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    // TOURNAMENTS HERO
+    &--tournaments {
+        height: 40vh;
+        width: 100%;
+        background-image: url(./images/golf-tee2.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+
+        & h2 {
+            text-transform: uppercase;
+            text-align: center;
+            color: $color-white;
+            font-size: $page-header-font-size;
+            letter-spacing: 3px;
+            width: 35%;
+            background-color: rgba($color-grey-dark, .85);
+            border-radius: 3px;
+            padding: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

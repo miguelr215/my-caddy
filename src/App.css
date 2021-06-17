@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
-}
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0;
+  box-sizing: inherit; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  font-size: 62.5%; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  box-sizing: border-box; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section:not(:first-child) {
+  margin-bottom: 3rem; }
+
+nav {
+  max-width: 114rem;
+  margin: 0 auto; }
+  nav ul {
+    padding: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(119, 119, 119, 0.85); }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        padding-bottom: .5rem; }
+        nav ul li a:hover, nav ul li a:active {
+          color: #b5b7fe;
+          border-bottom: 2px solid #f09527; }
+
+body {
+  font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+  padding: 2.5rem;
+  line-height: 1.7; }
+
+.section__header {
+  width: 100%;
+  padding: 1.5rem; }
+  .section__header h3 {
+    margin-left: 1.5rem;
+    font-size: 3rem;
+    color: #0309c2; }
+  .section__header__icon {
+    margin-right: 1rem;
+    color: #269d2a; }
+
+.u-flex-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center; }
 
-.App-link {
-  color: #61dafb;
-}
+.u-center-text {
+  text-align: center; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.addNewCourseBtn {
+  color: #269d2a;
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .addNewCourseBtn:hover, .addNewCourseBtn:active {
+    cursor: pointer;
+    color: #0309c2; }
+  .addNewCourseBtn__label {
+    font-size: 1.5rem;
+    margin-left: .75rem; }
+
+.baseBtn {
+  margin: 1rem 2.5rem;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-image: linear-gradient(to right, #61d965, #269d2a);
+  border-radius: 3px; }
+  .baseBtn:hover, .baseBtn:active {
+    background-image: linear-gradient(to right, #269d2a, #0f3d10);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+
+.deleteBtn {
+  color: #96570a;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+  text-align: center; }
+  .deleteBtn:hover, .deleteBtn:active {
+    cursor: pointer;
+    color: darkred; }
+  .deleteBtn__label {
+    font-size: 1rem;
+    display: block; }
+
+.heroRow {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0; }
+
+.section-hero--main {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url(./images/golf-course2.png);
+  background-size: cover;
+  background-position: top; }
+  .section-hero--main__greetingBox {
+    width: 35%;
+    background-color: rgba(119, 119, 119, 0.85);
+    border-radius: 3px;
+    padding: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-hero--main__greetingBox h2 {
+      font-size: 3.2rem;
+      margin-bottom: 5rem; }
+    .section-hero--main__greetingBox__navBox {
+      font-size: 1.6rem; }
+      .section-hero--main__greetingBox__navBox ul {
+        list-style: none;
+        justify-content: space-between; }
+        .section-hero--main__greetingBox__navBox ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding-bottom: .5rem; }
+          .section-hero--main__greetingBox__navBox ul li a:hover, .section-hero--main__greetingBox__navBox ul li a:active {
+            color: #b5b7fe;
+            border-bottom: 2px solid #f09527; }
+
+.section-hero--courses {
+  height: 40vh;
+  width: 100%;
+  background-image: url(./images/golf-course1a.png);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .section-hero--courses h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 3.2rem;
+    letter-spacing: 3px;
+    width: 35%;
+    background-color: rgba(119, 119, 119, 0.85);
+    border-radius: 3px;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.section-hero--tournaments {
+  height: 40vh;
+  width: 100%;
+  background-image: url(./images/golf-tee2.png);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .section-hero--tournaments h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 3.2rem;
+    letter-spacing: 3px;
+    width: 35%;
+    background-color: rgba(119, 119, 119, 0.85);
+    border-radius: 3px;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.moreBtn {
+  color: #4046fc;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+  text-align: center; }
+  .moreBtn:hover, .moreBtn:active {
+    cursor: pointer;
+    color: #269d2a; }
+  .moreBtn__label {
+    font-size: 1rem;
+    display: block; }
+
+.coursesBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .coursesBox__course {
+    width: 20rem;
+    border: 2px solid #4046fc;
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 1rem rgba(240, 149, 39, 0.5);
+    padding: 1rem;
+    margin: 2.5rem; }
+  .coursesBox__courseBtnsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem; }
+
+.tournamentBox {
+  display: flex;
+  justify-content: left;
+  flex-direction: column; }
+  .tournamentBox__activeBox {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .tournamentBox__activeBox__tournament {
+      width: 20rem;
+      border: 2px solid #f09527;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba(38, 157, 42, 0.5);
+      margin: 2.5rem; }
+      .tournamentBox__activeBox__tournamentTag {
+        width: 100%;
+        color: #fff;
+        background-color: #f09527;
+        text-align: center;
+        padding: .5rem; }
+      .tournamentBox__activeBox__tournamentDetail {
+        padding: 1rem; }
+  .tournamentBox__pastBox {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .tournamentBox__pastBox__tournament {
+      width: 20rem;
+      border: 2px solid #269d2a;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba(64, 70, 252, 0.5);
+      margin: 2.5rem; }
+      .tournamentBox__pastBox__tournamentTag {
+        width: 100%;
+        color: #fff;
+        background-color: #269d2a;
+        text-align: center;
+        padding: .5rem; }
+      .tournamentBox__pastBox__tournamentDetail {
+        padding: 1rem; }
+
+.container {
+  width: 100%; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 2.5rem; }

@@ -1,0 +1,122 @@
+
+    {
+        "userID": "187H69",
+        "firstName": "Samuel",
+        "lastName": "Adams",
+        "email": "bigA420@gmail.com",
+        "phone": "555-555-5555",
+        "myCourses": [
+            {
+                "courseName": "Forest Hills Golf Club",
+                "courseID": "00001",
+                "courseImg": "./src/images/forest-hills-view.jpg",
+                "courseImgName": "Forest Hills Main",
+                "coursePhone": "503-357-3347",
+                "courseWebsite": "https://golfforesthills.com/",
+                "courseAddress": "36260 SW Tongue Ln",
+                "courseCity": "Cornelius",
+                "courseState": "OR",
+                "courseZip": "97113"
+            },
+            {
+                "courseName": "Green Acres Golf Course",
+                "courseID": "00009",
+                "courseImg": "./src/images/golf-course3.png",
+                "courseImgName": "Green Acres Main",
+                "coursePhone": "503-357-2255",
+                "courseWebsite": "https://google.com",
+                "courseAddress": "1800 Washington Place",
+                "courseCity": "Tampa",
+                "courseState": "FL",
+                "courseZip": "42069"
+            }
+        ],
+        "myScheduledTournaments": [
+            {
+                "date": "May 16 2021",
+                "time": "12:42 PM",
+                "tournamentType": "Daily Men's League",
+                "tournamentId": "Daily Men's League May 16 2021 12:42 PM",
+                "groupNumber": "5",
+                "courseName": "Forest Hills Golf Club",
+                "courseID": "00001",
+                "score": "unknown",
+                "finish": "unknown",
+                "prizes": {
+                    "first": 100,
+                    "second": 50,
+                    "third": 25
+                }
+            },
+            {
+                "date": "June 3 2021",
+                "time": "1:12 PM",
+                "tournamentType": "Daily Men's League",
+                "tournamentId": "Daily Men's League June 3 2021 1:12 PM",
+                "groupNumber": "8",
+                "courseName": "Forest Hills Golf Club",
+                "courseID": "00001",
+                "score": "unknown",
+                "finish": "unknown",
+                "prizes": {
+                    "first": 100,
+                    "second": 50,
+                    "third": 25
+                }
+            }
+        ],
+        "myPastTournaments": [
+            {
+                "date": "March 16 2021",
+                "time": "11:36 AM",
+                "tournamentType": "Daily Men's League",
+                "tournamentId": "Daily Men's League March 16 2021 11:36 AM",
+                "groupNumber": "2",
+                "courseName": "Green Acres Golf Course",
+                "courseID": "00009",
+                "score": "72", 
+                "finish": "12 out of 27",
+                "numberOfPlayers": 0,
+                "prizes": {
+                    "first": 100,
+                    "second": 50,
+                    "third": 25
+                }
+            },
+            {
+                "date": "Feb 7 2021",
+                "time": "11:30 AM",
+                "tournamentType": "Daily Men's League",
+                "tournamentId": "Daily Men's League Feb 7 2021 11:30 AM",
+                "groupNumber": "1",
+                "courseName": "Forest Hills Golf Club",
+                "courseID": "00001",
+                "score": "69",
+                "finish": "7 out of 25",
+                "numberOfPlayers": 0,
+                "prizes": {
+                    "first": 100,
+                    "second": 50,
+                    "third": 25
+                }
+            },
+            {
+                "date": "Jan 1 2021",
+                "time": "2:18 PM",
+                "tournamentType": "Daily Men's League",
+                "tournamentId": "Daily Men's League Jan 1 2021 2:18 PM",
+                "groupNumber": "12",
+                "courseName": "Forest Hills Golf Club",
+                "courseID": "00001",
+                "score": "70",
+                "finish": "18 out of 36",
+                "numberOfPlayers": 0,
+                "prizes": {
+                    "first": 100,
+                    "second": 50,
+                    "third": 25
+                }
+            }
+        ],
+        "myCredits": 42
+    }

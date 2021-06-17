@@ -1,0 +1,20 @@
+.addNewCourseBtn {
+    color: $color-primary;
+    font-size: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        color: $color-tertiary-dark;
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        margin-left: .75rem;
+    }
+}
